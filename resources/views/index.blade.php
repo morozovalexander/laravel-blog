@@ -10,7 +10,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h3>
-                                    <a href="{{ url('/article/show', ['id' => $article->id]) }}">
+                                    <a href="{{ route('show_article', ['id' => $article->id]) }}">
                                         {{ $article->title }}
                                     </a>
                                 </h3>
