@@ -31,5 +31,6 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/article/show/{id}', 'ArticleController@show')->name('show_article');
     Route::get('/article/new', 'ArticleController@newArticle')->name('new_article');
     Route::post('/article/new', 'ArticleController@store')->name('store_article');
+    Route::get('/user/{id}', 'UserController@index')->name('user_index');
     Route::auth();
 });
