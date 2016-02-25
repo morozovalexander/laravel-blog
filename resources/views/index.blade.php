@@ -20,7 +20,7 @@
                             </div>
                             <div class="panel-footer">
                                 <div class="text-right">
-                                    by <a href="{{ route('user_index', ['id' => $article->id]) }}">
+                                    by <a href="{{ route('user_index', ['id' => $article->user->id]) }}">
                                         {{ $article->user->name }}
                                     </a> at {{ $article->created_at}}
                                 </div>
